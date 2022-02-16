@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h1>Lista fibonacci</h1>
+
+  <ul>
+    <li id="printFibonacci"></li>
+  </ul>
+
+  <script>
+
+let numeroDeElementos;
+
+function fibonacci (){
+  let lista = [0,1]
+
+  for (let i = 2; i < 15; i++) {
+            lista[i] = lista[i - 2] + lista[i - 1];
+  }
+
+return lista;
+
+}
+
+numeroDeElementos = fibonacci(); 
+console.log(numeroDeElementos);
+document.getElementById("printFibonacci").innerHTML = numeroDeElementos;
+</script>
+    
+</body>
+</html>
